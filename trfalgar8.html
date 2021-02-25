@@ -3,39 +3,41 @@
     <head>
         <meta charset="UTF-8">
         <title>trafalgar8</title>
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
     </head>
         <body>
             <!-- header -->
-            <header>
-                <a href="#"><img src="img/logo2.png" alt="logo"></a>
+            <header class="container-full">
+                <a class="logo" href="#"><img src="img/logo2.png" alt="logo"><span>Trafalgar</span></a>
             <nav>
-                 <ul>
+                 <ul class="nav-list">
                   <li>
-                      <a href="#">Home</a>
+                      <a class="nav-link Home" href="#">Home</a>
                  </li>
-                 <li><a href="#">Apps</a></li>
+                 <li><a class="nav-link" href="#">Apps</a></li>
                  <li>
-                     <a href="#">Testimanials</a>
+                     <a class="nav-link" href="#">Testimanials</a>
                  </li>
                   <li>
-                    <a href="#">About us</a>
+                    <a class="nav-link" href="#">About us</a>
                  </li>
                 </ul>
             </nav>                    
            </header>
+           <!-- end header -->
+           <!-- start main -->
            <main>
-               <section>
-                   <img class="imges" src="img/virtual.png" alt="virtual">
-                   <h1>Virtual healthcare for you</h1>
+               <section class="virtual container-full">
+                   
+                   <div class="container-virtual" >
+                       <h1>Virtual healthcare for you</h1>
                    <p>Trafalgar provides progressive, and affardable healthcare, accesible on mobile and online for everyone</p>
-               </section>
-               <p><a href="#">Consult today</a></p>
-                <section class="services">
+                   <button class="button-fill">Consult today</button>
+                </div>
+                <img class="virtual-img" src="img/virtual.png" alt="virtual">
+                </section>
+               
+                <section class="services container">
                     <h2 >Our servises</h2>
                     <p class="services-text">
                     We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo treatment with our highly qualified doctors you can consult with us which type of service is suitable for your health
@@ -86,30 +88,33 @@
                          </ul>
                                                
                    </section>
-                   <p><a class="button" href="#">Learn more</a></p>  
-                   <section style="text-align: right;">
-                    <img src="img/leading.png" alt="leading">
-                    <h2>Leading healthcare providers</h2>
+                  <p class="text-center"><a class="button" href="#">Learn more</a></p>
+                   <section class="container-full leading">
+                    <img class="leading-img" src="img/leading.png" alt="leading">
+                    <div>
+                        <h2>Leading healthcare providers</h2>
                     <p>Trafalgar provides progressive, and affardable healthcare, accesible on mobile and online for everyone. To us, it`s not just work. We take pride in the solutions we deliver.
                     </p>
-                                          
+                    <p>
+                        <a class="button" href="#">Lean more</a>
+                    </p> 
+                </div>                
                 </section>
-                <p>
-                    <a href="">Lean more</a>
-                </p> 
-            </section>
-            <p><a class="button" href="#">Learn more</a></p>  
-            <section>
-             <img src="img/download.png" alt="download">
+                     
+              <section class="download container">
+             <div>
              <h2>Download our mobile apps</h2>
              <p>Our dedicated patient engagement app and 
                 web portal allow you to access information instantaneously (no tedeous form, long calls, 
                 or administrative hassle) and securely</p>
+                
+                    <a class="button" href="#">Download   <img src="img/Vector.svg" alt="vector down"></a>
+                 
+            </div>
+                <img class="download-img" src="img/download.png" alt="download">
                                    
          </section>
-         <p>
-             <a href="">Lean more</a>
-         </p> 
+        
          <section>
              <h2>What our customer are saying</h2>
              <img src="img/edward.png" alt="edward">
@@ -154,12 +159,18 @@
         
            </main>
            <footer>
-               <img src="img/logo.png" alt="logo">
+               <div class="container-full footer-container">
+                   <section class="credentials">
+                       <a class="logo logo-white" href="#"><img class="logo-white-img" src="img/logo2.png" alt="logo-white"><span>Trafalgar</span></a>              
                <p>Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online 
                 for everyone</p>
-                <p>©Trafalgar PTY LTD 2020. All rights reserved</p>
+                <p class="text-small">©Trafalgar PTY LTD 2020. All rights reserved</p>
+                   </section>
+               
+               <section class="navigation">
 
-                <h3>Company</h3>
+                <h3><a href="#">Company</a></h3>
+                <nav>
                 <ul>
                     <li>
                        <a href="#">About</a> 
@@ -171,7 +182,12 @@
                     <li>
                         <a href="#">Apps</a></li>
                 </ul>
-                <h3>Region</h3>
+            </nav>
+               </section>
+
+            <section class="navigation">
+                <h3><a href="#">Region</a></h3>
+                <nav>
                 <ul>
                     <li>
                        <a href="#">Indonesia</a> 
@@ -183,7 +199,11 @@
                     <li>
                         <a href="#">Canada</a></li>
                 </ul>
-                <h3>Help</h3>
+            </nav>
+        </section>
+            <section class="navigation">
+                <h3><a href="#">Help</a></h3>
+                <nav>
                 <ul>
                     <li>
                        <a href="#">Help center</a> 
@@ -195,6 +215,9 @@
                     <li>
                         <a href="#">How it works</a></li>
                 </ul>
+            </nav>
+            </section>
+        </div>
            </footer>
         
             </body>
